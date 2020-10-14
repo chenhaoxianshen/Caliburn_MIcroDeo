@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfModel.Views.DataGridView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfModel.Views"
+        xmlns:us="clr-namespace:WpfModel.UserControls"
+        mc:Ignorable="d"
+        Title="数据绑定"  Height="496.053" Width="1300">
+    <Grid Width="1290" ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="640"></ColumnDefinition>
+            <ColumnDefinition Width="640"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <us:EmployeeInfoView  Grid.Column="0"/>
+        <us:SaveEmployeeView  Grid.Column="1"/>
+    </Grid>
+</Window>
